@@ -1,1 +1,20 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors.
+This is the extremely beta version of documentation for the 2.0.0 release of BioX-Workflow-Command. More information coming soon!
+
+
+
+On the roadmap for docs - in no particular order.
+
+* What is a workflow?
+* Why should I use BioX?
+* What are global variables?
+* Which variables are special variables?
+* What are rules?
+* How do rules relate to one another?
+* How do I implement custom rules?
+* Similar tools.
+* Acknowledgements.
+
+
+
+
+

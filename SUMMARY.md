@@ -9,6 +9,6 @@
 * [Quick Start - Command Line Operations](quick-start-command-line-operations.md)
 * [Quick Start - Simple Workflow](quick-start-simple-workflow.md)
 * [Advanced - Adding Custom Lists](advanced-adding-custom-lists.md)
-* Accessing Variables
+* [Accessing Variables](accessing-variables.md)
 * [Acknowledgements](acknowledgements.md)
 

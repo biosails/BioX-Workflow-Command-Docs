@@ -14,9 +14,33 @@ biox run --help
 ## Run a Workflow
 
 ```
-#Previously biox-workflow.pl --workflow workflow.yaml
 biox run -w workflow.yml #or --workflow
 biox-workflow.pl run --workflow workflow.yml
+```
+
+## Run a Workflow with a subset of rules
+
+Assuming we have rules: rule1, rule2, rule3.
+
+#### Select rules
+
+```
+#run rules: rule1,rule2
+biox run -w workflow.yml --select_rules rule1,rule2
+```
+
+#### Match Rules
+
+```
+#Run rules rule1,rule2,rule2
+biox run -w workflow.yml --match_rules rule
+```
+
+#### Omit Rules
+
+```
+#Run rules rule2,rule3
+biox run -w workflow.yml --omit_rules rule1
 ```
 
 ## Run a Workflow with make like utilities

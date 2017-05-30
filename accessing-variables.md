@@ -1,6 +1,6 @@
 # Accessing Variables
 
-BioX-Workflow-Command takes advantage of templating. Templates like to put variables into documents with funny symbols around them so the computer knows its a variable and not just some text.
+BioX-Workflow-Command takes advantage of templating. Templating systems like to put variables into documents with funny symbols around them so the computer knows its a variable and not just some text.
 
 Variables are **declared** in the _global/local_ keys.
 
@@ -39,7 +39,6 @@ And they are **accessed** in the_ process_ key.
                 {$self->OUTPUT->[2]} \
                 {$self->OUTPUT->[3]} \
                 TRAILING:3 LEADING:3 SLIDINGWINDOW:4:15 MINLEN:36
-
 ```
 
 Variables are always accessed as {$self-&gt;VARNAME}, except for sample, which is accessed as just {$sample}. When the [templating library ](https://metacpan.org/pod/Text::Template) sees '{' it knows that a variable and not just plain text is starting.

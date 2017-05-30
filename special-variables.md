@@ -14,7 +14,7 @@ data
     └── Sample_03
 ```
 
-The workflow is _my\_workflow.yml, _and we run biox as 
+The workflow is \_my\_workflow.yml, \_and we run biox as
 
 ```
 biox run -w my_workflow.yml -o my_workflow.sh
@@ -22,9 +22,9 @@ biox run -w my_workflow.yml -o my_workflow.sh
 
 ## Indir / Outdir / and \*\_dir
 
-_Indir/outdir_ and all variables that are named in the pattern _\*_dir \(trimmomatic\_dir, analysis\_dir, my\_awesome\_dir, etc\)_ _evaluates to an [absolute directory](https://www.linux.com/blog/absloute-path-vs-relative-path-linuxunix). 
+_Indir/outdir_ and all variables that are named in the pattern _\*\_dir \(trimmomatic\_dir, analysis\_dir, my\_awesome\_dir, etc\)_ \_evaluates to an [absolute directory](https://www.linux.com/blog/absloute-path-vs-relative-path-linuxunix).
 
-The global _indir_ tells biox where to find the samples. 
+The global _indir_ tells biox where to find the samples.
 
 ```
     ---
@@ -39,7 +39,7 @@ biox run -w my_workflow.yml -o my_file
 
 BioX would evaluate the global _indir_ as '/home/user/my\_analysis/data/raw'. This behavior can be overridden if you set _coerce\_abs\_dir_ to 0.
 
-There is also an _indir _per local rule, which is also evaluated as a full path. _Indir _is a chained variable, meaning it gets its value from either the global, if it is the first rule, or the _outdir_ of the previous rule, unless it is set.
+There is also an _indir \_per local rule, which is also evaluated as a full path. \_Indir \_is a chained variable, meaning it gets its value from either the global, if it is the first rule, or the \_outdir_ of the previous rule, unless it is set.
 
 ```
 ---
@@ -61,22 +61,18 @@ rules:
         outdir: {$self->outdir}
 ```
 
+For the sake of readability '/home/user/myanalysis' was ommited from the Rendered Variable for all but the first variable.
+
 Running biox would give us
 
-\(For the sake of readability I have omitted the '/home/user/my\_analysis' from the full path name for all but the first variable.\)
-
-| Rule | Template Variable | Output Variable |
+| Rule | Template Variable | Rendered Variable |
 | :--- | :--- | :--- |
 | rule1 | indir | /home/user/my\_analysis/data/raw/Sample\_01 |
 | rule1 | outdir | data/processed/Sample\_01/rule1 |
 | rule2 | indir | data/processed/Sample\_01/rule1 |
 | rule2 | outdir | data/processed/Sample\_01/rule2 |
 
-
-
 You can, of course, change this and make it whatever you like.
-
-
 
 ```
 ---
@@ -110,7 +106,7 @@ rules:
 | rule2 | indir | data/processed/Sample\_01/analysis |
 | rule2 | outdir | data/processed/Sample\_01/rule2 |
 
-In this example we explictly set the _outdir _of rule1 and the _indir _of rule2.
+In this example we explictly set the _outdir _ of rule1 and the _indir_ of rule2.
 
 ## INPUT/OUTPUT
 
@@ -118,6 +114,7 @@ Input and output are like indir/outdir, but instead of directories they are eval
 
 ```
             local:
+              - bowtie2_dir: "data/processed/{$sample}/bowtie2"
               - INPUT:
                 - "{$self->trimmomatic_dir}/{$sample}_1PE.fastq.gz"
                 - "{$self->trimmomatic_dir}/{$sample}_2PE.fastq.gz"
@@ -127,9 +124,17 @@ Input and output are like indir/outdir, but instead of directories they are eval
                 -1 {$self->INPUT->[0]} \
                 -2 {$self->INPUT->[1]} \
                 -S {$self->OUTPUT}
-
-
 ```
 
-The INPUT in this case is defined as a list, which we access as {$self-&gt;INPUT-&gt;\[0\]} and {$self-&gt;INPUT-&gt;\[1\] \(because for computer a list always starts with 0\), but OUTPUT is a single variable and is accessed as {$self-&gt;OUTPUT}.
+The INPUT in this case is defined as a list, which we access as {$self-&gt;INPUT-&gt;\[0\]} and {$self-&gt;INPUT-&gt;\[1\]} \(because for computer a list always starts with 0\), but OUTPUT is a single variable and is accessed as {$self-&gt;OUTPUT}.
+
+For the sake of readability  '/home/user/myanalysis' was ommited from the Rendered Variable
+
+| Template Variable | Rendered Variable |
+| :--- | :--- |
+| {$self-&gt;INPUT-&gt;\[0\]} | data/processed/Sample\_01/trimmomatic/Sample\_01\_1PE.fastq.gz |
+| {$self-&gt;INPUT-&gt;\[1\]} | data/processed/Sample\_01/trimmomatic/Sample\_01\_2PE.fastq.gz |
+| {$self-&gt;OUTPUT} | data/processed/Sample\_01/bowtie2/Sample\_01\_align.sam |
+
+
 

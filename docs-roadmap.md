@@ -1,3 +1,5 @@
+Documentation is an ongoing process.
+
 On the roadmap for docs - in no particular order.
 
 * What is a workflow?

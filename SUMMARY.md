@@ -6,7 +6,7 @@
 * [Special Variables](special-variables.md)
 * [Directory Structure](directory-structure.md)
 * [Advanced - Adding Custom Lists](advanced-adding-custom-lists.md)
-* [Docs Roadmap](docs-roadmap.md)
 * [Quick Start - Command Line Operations](quick-start-command-line-operations.md)
 * [Quick Start - Simple Workflow](quick-start-simple-workflow.md)
+* [Docs Roadmap](docs-roadmap.md)
 

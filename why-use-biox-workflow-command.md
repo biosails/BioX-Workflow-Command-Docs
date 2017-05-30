@@ -1,4 +1,4 @@
-## Why should I use BioX-Workflow-Command
+## Why use BioX-Workflow-Command?
 
 
 

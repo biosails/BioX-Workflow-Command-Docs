@@ -32,7 +32,7 @@ biox run --workflow workflow.yml --auto_deps
 This creates a new workflow with rules rule1, rule2, rule3, with a few variables to help get you started.
 
 ```
-biox new -w workflow.yml --select_rules rule1,rule2,rule3
+biox new -w workflow.yml --rules rule1,rule2,rule3
 ```
 
 ## Add a new rule to a workflow

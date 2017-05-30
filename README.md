@@ -16,6 +16,8 @@ biox run -w my_workflow.yml -o my_workflow.sh
 
 ### Rules
 
+BioX-Workflow-Command runs with a list of rules. Each rule is a step in your analysis.
+
 BioX-Workflow-Command assumes you have a set of inputs, known as samples, and these inputs will carry on through your pipeline. There are some exceptions to this, which we will explore in the [Advanced - Adding Custom Lists](/advanced-adding-custom-lists.md), but just iterating over your samples will get you far!
 
 Here is an example of a trimmomatic rule.
@@ -57,19 +59,16 @@ Here is an example directory structure from BioX-Workflow.
 
 ```
 ├── my_analysis
-│       ├── Sample01
-│       │   ├── analysis
-│       │   │   ├── bowtie2
-│       │   │   ├── gatk
-│       │   │   ├── picard
-│       │   │   └── samtools
-│       │   └── processed
-│       │       ├── trimm_fastqc
-│       │       └── trimmomatic
-
+│       ├── Sample01
+│       │   ├── analysis
+│       │   │   ├── bowtie2
+│       │   │   ├── gatk
+│       │   │   ├── picard
+│       │   │   └── samtools
+│       │   └── processed
+│       │       ├── trimm_fastqc
+│       │       └── trimmomatic
 ```
-
-
 
 This is the extremely beta version of documentation for the 2.0.0 release of BioX-Workflow-Command. More information coming soon!
 

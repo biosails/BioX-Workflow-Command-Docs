@@ -7,8 +7,6 @@
 * [Directory Structure](directory-structure.md)
 * [Advanced - Adding Custom Lists](advanced-adding-custom-lists.md)
 * [Docs Roadmap](docs-roadmap.md)
-* Quick Start - Command Line Operations
+* [Quick Start - Command Line Operations](quick-start-command-line-operations.md)
 * Quick Start - Simple Workflow
-
-
 

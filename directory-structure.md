@@ -36,7 +36,7 @@ my_analysis
       Sample_X/
 ```
 
-This is the most common way to setup the initial data. All samples are folders, and usually the initial \(raw\) data is in a separate location from the secondary \(processed, analysis\) data.
+This is the most common way to setup the initial data. All samples are folders, and usually the initial \(raw\) data is in a separate location from the secondary \(processed, analysis\) data. This is very handy, because when you want to redo an analysis just make sure you keep the raw directory, or better yet make it read only!
 
 ### Processed Data
 
@@ -48,5 +48,5 @@ data/processed
       Sample_X.read2.trimm.fastq.gz
 ```
 
-By default, each rule that is created in has a separate outdir. This is declared by using the _outdir._ Declaring the outdir as _'data/processed_' in the global variables would result in the outdirs as '_data/processed/SampleX/RULE\_NAME'. _In this case the rule name is _'trimmomatic'._
+By default, each rule that is created in has a separate outdir. This is declared by using the _outdir._ Declaring the outdir as _'data/processed_' in the global variables would result in the outdirs as '_data/processed/SampleX/RULE\_NAME'. _In this case the rule name is 'trimmomatic'.
 

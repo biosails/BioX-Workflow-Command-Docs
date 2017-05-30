@@ -49,11 +49,11 @@ Here is an example of a trimmomatic rule.
                 TRAILING:3 LEADING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
 
-Pointed at a list of samples \([Find Samples](/find-samples.md)\), running biox would generate a single bash command per sample.
+Pointed at a list of samples \([Find Samples](/find-samples.md)\), running biox would generate a single bash command, aka a task, per sample.
 
 ### Directory Structure
 
-It also makes several assumptions about your output structure. It assumes you have each of your processes/rules outputting to a distinct directory.  These directories will be named created and automatically named based on your rule name.
+BioX makes some assumptions about your output structure. It assumes you have each of your processes/rules outputting to a distinct directory.  These directories will be named created and automatically named based on your rule name.
 
 Here is an example directory structure from BioX-Workflow.
 

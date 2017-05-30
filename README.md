@@ -53,7 +53,7 @@ Pointed at a list of samples \([Find Samples](/find-samples.md)\), running biox 
 
 ### Directory Structure
 
-BioX makes some assumptions about your output structure. It assumes you have each of your processes/rules outputting to a distinct directory.  These directories will be named created and automatically named based on your rule name.
+BioX makes some assumptions about your output structure. It assumes you have each of your processes/rules outputting to a distinct directory.  These directories will be automatically created based on your rule name.
 
 Here is an example directory structure from BioX-Workflow.
 

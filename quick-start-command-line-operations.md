@@ -16,9 +16,17 @@ biox run --help
 ```
 biox run -w workflow.yml #or --workflow
 biox-workflow.pl run --workflow workflow.yml
+
 ```
 
-## Run a Workflow with a subset of rules
+## Run a Workflow with a subset of Samples
+
+```
+biox run -w workflow --samples Sample_01
+biox run -w workflow --samples Sample_01,Sample_02
+```
+
+## Run a Workflow with a subset of Rules
 
 Assuming we have rules: rule1, rule2, rule3.
 
@@ -64,7 +72,7 @@ biox new -w workflow.yml --rules rule1,rule2,rule3
 Add new rules to an existing workflow.
 
 ```
-biox add -w workflow.yml --rules rule4
+biox add -w workflow.yml --rules rule4,rule5
 ```
 
 ## Check the status of files in your workflow

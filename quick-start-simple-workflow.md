@@ -244,7 +244,7 @@ TRAILING:3 LEADING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
 #### Comment Annotation
 
-This looks very similar to what we had before. Now we have 4 _INPUT_s and 4 _OUTPUT_s, one for each of our reads. We aren't moving any files around, so both the indir and outdir are defined as the trimmomatic dir.
+This looks very similar to what we had before. Now we have 4 \_INPUT\_s and 4 \_OUTPUT\_s, one for each of our reads. We aren't moving any files around, so both the indir and outdir are defined as the trimmomatic dir.
 
 ```
 #
@@ -295,7 +295,6 @@ Same as before, BioX gives us a bash file of commands.
 For the sake of readability I removed the full path name, but in the real world 'data/processed' would be '/home/user/my\_analysis/data/processed'.
 
 ```
-
 #TASK tags=Sample_01
 gzip -f data/processed/Sample_01/trimmomatic/Sample_01_read1_trimmomatic_1PE.fastq
 #TASK tags=Sample_01
@@ -368,7 +367,7 @@ What we see is very similar to the what we saw in previous rules.
 #
 ```
 
-Notice that since we have a single _OUTPUT, _it can be declared as a key/value pair instead of a key/list.
+Notice that since we have a single \_OUTPUT, \_it can be declared as a key/value pair instead of a key/list.
 
 ```
 # THIS IS A LIST
@@ -404,6 +403,12 @@ bowtie2 -p 7 -x data/genome.fa \
 -2 data/processed/Sample_03/trimmomatic/Sample_03_read2_trimmomatic_2PE.fastq.gz \
 -S data/processed/Sample_03/bowtie2/Sample_03_aligned.sam
 ```
+
+
+
+### Altogether Now
+
+This is the entire workflow as a whole.
 
 Starting with trimmomatic\_gzip, I removed the _'_/home/user/my\_analysis' in order to make the file more readable.
 

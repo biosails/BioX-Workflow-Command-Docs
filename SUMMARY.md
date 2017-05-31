@@ -8,9 +8,7 @@
 * [Directory Structure](directory-structure.md)
 * [Quick Start - Command Line Operations](quick-start-command-line-operations.md)
 * [Quick Start - Simple Workflow](quick-start-simple-workflow.md)
+* [Advanced - Using the stash](advanced-using-the-stash.md)
 * [Advanced - Adding Custom Lists](advanced-adding-custom-lists.md)
-
-* [Acknowledgements](acknowledgements.md)
-
-
+* Advanced - Using the stash
 

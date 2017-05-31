@@ -10,5 +10,5 @@
 * [Quick Start - Simple Workflow](quick-start-simple-workflow.md)
 * [Advanced - Using the stash](advanced-using-the-stash.md)
 * [Advanced - Adding Custom Lists](advanced-adding-custom-lists.md)
-* Advanced - Using the stash
+* [Global vs Local Variables](global-vs-local-variables.md)
 

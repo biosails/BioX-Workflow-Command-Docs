@@ -155,9 +155,7 @@ BioX starts off by telling you how you ran it, and what your global parameters w
 
 Once again, biox adds quite a bit of information. First is the 'Starting RuleX' block, then the variable declaration. If you are using the carry over capabilities of BioX for the INPUT/OUTPUT or indir/outdir, you will see them here.
 
-
-
-There is a very important distinction to make here with variables. We declared _TR1_ and _TR2 _in the global key. All variables declared in the global key are available throughout the workflow, but local variables are only available within a rule. An important exception to this is the stash variable, which is carried through. 
+There is a very important distinction to make here with variables. We declared _TR1_ and \_TR2 \_in the global key. All variables declared in the global key are available throughout the workflow, but local variables are only available within a rule. An important exception to this is the stash variable, which is carried through. You can find out more about the stash in [Advanced - Using the stash.](/advanced-using-the-stash.md)
 
 ```
 #
@@ -195,7 +193,6 @@ There is a very important distinction to make here with variables. We declared _
 ### HPC Directives
 #HPC jobname=trimmomatic
 #
-
 ```
 
 ### Bash!
@@ -205,7 +202,6 @@ BioX is written to be as transparent as possible. It outputs bash that can be ru
 By default BioX resolves all special directory variables as absolute paths.
 
 ```
-
 #TASK tags=Sample_01
 trimmomatic \
 PE -threads 6 \
@@ -246,8 +242,6 @@ TRAILING:3 LEADING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
 
 #### Workflow Script - Rule 1 TrimmomaticGzip
-
-
 
 Starting with trimmomatic\_gzip, I removed the _'_/home/user/my\_analysis' in order to make the file more readable.
 

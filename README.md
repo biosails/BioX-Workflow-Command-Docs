@@ -20,7 +20,7 @@ A workflow is set of tasks that make up a scientific analysis. These include qua
 
 Specifically, according to BioX, a workflow is a yaml or json configuration file that follows a specific format. At a minimum a workflow has at least one rule.
 
-To see examples of production workflows check out the github repository  [biosails/workflows](https://github.com/biosails/workflows)
+To see examples of production workflows check out the github repository  [biosails/workflows](https://github.com/biosails/workflows).
 
 ### What is a Rule?
 

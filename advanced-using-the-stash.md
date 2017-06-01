@@ -2,7 +2,9 @@
 
 The stash is most often used in conjunction with custom rules. It is a way of manipulating the global object within a workflow, or making data persist between rules.
 
-In this example we use chunks, which is just an arbitrary list defined in BioX, iterate over them, use them to categorize our samples, and stick them in the stash. We could access the variable {$self-&gt;stash-&gt;{allchunks}}_ _anywhere in the workflow after the combine\_chunks rule.
+In this example we use chunks, which is just an arbitrary list defined in BioX, iterate over them, use them to categorize our samples, and stick them in the stash. We could access the variable {$self-&gt;stash-&gt;{all\_chunks}} anywhere in the workflow after the combine\_chunks rule.
+
+Notice that anything between '{ }' is interpolated directly as perl code.
 
 This is an example from the resequencing model organisms workflow.
 
@@ -32,7 +34,6 @@ This is an example from the resequencing model organisms workflow.
                 }
                 samtools merge  -f {$self->OUTPUT} \
                   {$self->stash->{all_chunks}}
-
 ```
 
 

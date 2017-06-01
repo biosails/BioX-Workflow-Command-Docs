@@ -43,3 +43,9 @@ And they are **accessed** in the_ process_ key.
 
 Variables are always accessed as {$self-&gt;VARNAME}, except for sample, which is accessed as just {$sample}. When the [templating library ](https://metacpan.org/pod/Text::Template) sees '{' it knows that a variable and not just plain text is starting.
 
+Templating is done using perl, and all variables are accessed as perl variables.
+
+
+
+
+

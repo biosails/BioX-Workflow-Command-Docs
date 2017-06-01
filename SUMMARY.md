@@ -12,4 +12,5 @@
 * [Advanced - Using the stash](advanced-using-the-stash.md)
 * [Contact Us](contact-us.md)
 * [Advanced - Custom Rules](advanced-custom-rules.md)
+* [Technical Details](technical-details.md)
 

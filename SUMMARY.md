@@ -13,4 +13,5 @@
 * [Contact Us](contact-us.md)
 * [Advanced - Custom Rules](advanced-custom-rules.md)
 * [Technical Details](technical-details.md)
+* [Developer Docs - Creating Plugins](developer-docs-creating-plots.md)
 

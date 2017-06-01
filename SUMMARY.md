@@ -10,8 +10,8 @@
 * [Quick Start - Command Line Operations](quick-start-command-line-operations.md)
 * [Quick Start - Simple Workflow](quick-start-simple-workflow.md)
 * [Advanced - Using the stash](advanced-using-the-stash.md)
-* [Contact Us](contact-us.md)
 * [Advanced - Custom Rules](advanced-custom-rules.md)
 * [Technical Details](technical-details.md)
 * [Developer Docs - Creating Plugins](developer-docs-creating-plots.md)
+* [Contact Us](contact-us.md)
 

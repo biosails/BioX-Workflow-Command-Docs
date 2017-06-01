@@ -12,11 +12,17 @@ Once you have your configuration run BioX to get your shell script.
 biox run -w my_workflow.yml -o my_workflow.sh
 ```
 
-
-
 ## Indepth
 
-### Rules
+### What is a Workflow?
+
+A workflow is set of tasks that make up a scientific analysis. These include quality control, alignment, variant detection, enrichment analysis, and many more.
+
+Specifically, according to BioX, a workflow is a yaml or json configuration file that follows a specific format. At a minimum a workflow has at least one rule.
+
+To see examples of production workflows check out the github repository  [biosails/workflows](https://github.com/biosails/workflows)
+
+### What is a Rule?
 
 BioX-Workflow-Command runs with a list of rules. Each rule is a step in your analysis.
 

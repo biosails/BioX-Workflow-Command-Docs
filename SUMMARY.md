@@ -11,4 +11,5 @@
 * [Quick Start - Simple Workflow](quick-start-simple-workflow.md)
 * [Advanced - Using the stash](advanced-using-the-stash.md)
 * [Contact Us](contact-us.md)
+* [Advanced - Custom Rules](advanced-custom-rules.md)
 

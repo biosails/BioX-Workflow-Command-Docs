@@ -16,7 +16,7 @@ We are a bit obsessed with bash.
 
 ### Reproducible Research
 
-Sharing a workflow with another group is an easy as sharing a your yaml workflow file. Rerunning an analysis is as easy as executing 'biox run' from your project directory.
+Sharing a workflow with another group is an easy as sharing a your yaml workflow file. Rerunning an analysis is as easy as executing 'biox run' from your project directory. BioX runs your analysis from a single file, making it very easy to quickly get an idea of the steps of a workflow.
 
 ### Support your support staff
 
@@ -27,6 +27,4 @@ Keeping your code base at a minimum and your directory structure consistent will
 # Why not use BioX?
 
 There are of course cases where you would not want to use BioX. If you are writing a large amount of custom code, and not using mostly command line applications, it is probably not desirable to use BioX. If you dislike the default settings, or generally prefer to use software that does not come with so many default parameters, BioX is not for you.
-
-
 

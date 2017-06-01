@@ -2,15 +2,17 @@
 
 > An extremely opinionated bioinformatics and genomics workflow creator.
 
-Bioinformatics workflows usually involve starting with a set of samples, and analyzing those samples in one or more steps. BioX-Workflow-Command helps to accomplish this by implementing a templating system that simplifies analysis rules. It has a robust set of defaults in order to get started quickly, but gives you the freedom to override these whenever you wish.
+BioX-Workflow-Command \(BioX\) adds consistency to your analyses. It provides a uniform way of processing multiple samples over many steps of an analysis, along with a clean and concise directory structure.
 
-Using BioX-Workflow adds consistency to your analyses. It provides a uniform way of processing multiple samples over many steps of an analysis, along with a clean and concise directory structure.
+Bioinformatics workflows usually involve starting with a set of samples, and analyzing those samples in one or more steps. BioX helps to accomplish this by implementing a templating system that simplifies analysis rules. It has a robust set of defaults in order to get started quickly \(this is the extremely opinionated part\), but gives you the freedom to override these whenever you wish.
 
-Once you have your configuration run Biox-Workflow-Command to get your shell script.
+Once you have your configuration run BioX to get your shell script.
 
 ```
 biox run -w my_workflow.yml -o my_workflow.sh
 ```
+
+
 
 ## Indepth
 

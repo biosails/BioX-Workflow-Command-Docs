@@ -11,12 +11,20 @@ biox-workflow.pl --help
 biox run --help
 ```
 
+```
+biox --help
+biox run --help
+biox add --help
+biox new --help
+biox stats --help
+biox validate --help
+```
+
 ## Run a Workflow
 
 ```
 biox run -w workflow.yml #or --workflow
 biox-workflow.pl run --workflow workflow.yml
-
 ```
 
 ## Run a Workflow with a subset of Samples

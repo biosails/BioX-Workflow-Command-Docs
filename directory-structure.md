@@ -48,5 +48,15 @@ data/processed
       Sample_X.read2.trimm.fastq.gz
 ```
 
-By default, each rule that is created in has a separate outdir. This is declared by using the _outdir._ Declaring the outdir as _'data/processed_' in the global variables would result in the outdirs as '_data/processed/SampleX/RULE\_NAME'. _In this case the rule name is 'trimmomatic'.
+By default, each rule that is created in has a separate outdir. This is declared by using the _outdir._ Declaring the _outdir _as _'data/processed_' in the global variables would result in the outdirs as _'data/processed/SampleX/RULE\_NAME'._  In this case the rule name is 'trimmomatic'.
+
+
+
+### Analysis Data
+
+Sometimes an addition '_data/analysis_' is added for downstream analysis.
+
+
+
+
 

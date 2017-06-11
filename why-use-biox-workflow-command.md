@@ -22,7 +22,7 @@ Sharing a workflow with another group is an easy as sharing a your yaml workflow
 
 Anytime anyone tells me about a problem the first thing I ask for is the bash code that is executed. Anytime I ask for help the first thing I am asked for is the bash code.
 
-Keeping your code base at a minimum and your directory structure consistent will go a very long way in order to make your analysis understood by people who are not you.
+Keeping your code base transparent and your directory structure consistent will go a very long way in order to make your analysis understood by people who are not you.
 
 # Why not use BioX?
 

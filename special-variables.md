@@ -22,7 +22,7 @@ biox run -w my_workflow.yml -o my_workflow.sh
 
 ## Indir / Outdir / and \*\_dir
 
-_Indir/outdir_ and all variables that are named in the pattern _\*\_dir \(trimmomatic\_dir, analysis\_dir, my\_awesome\_dir, etc\)_ \_evaluates to an [absolute directory](https://www.linux.com/blog/absloute-path-vs-relative-path-linuxunix).
+_Indir/outdir_ and all variables that are named in the pattern _\*\_dir \(trimmomatic\_dir, analysis\_dir, my\_awesome\_dir, etc\)_ evaluates to an [absolute directory](https://www.linux.com/blog/absloute-path-vs-relative-path-linuxunix).
 
 The global _indir_ tells biox where to find the samples.
 
@@ -39,7 +39,7 @@ biox run -w my_workflow.yml -o my_file
 
 BioX would evaluate the global _indir_ as '/home/user/my\_analysis/data/raw'. This behavior can be overridden if you set _coerce\_abs\_dir_ to 0.
 
-There is also an _indir \_per local rule, which is also evaluated as a full path. \_Indir \_is a chained variable, meaning it gets its value from either the global, if it is the first rule, or the \_outdir_ of the previous rule, unless it is set.
+There is also an _indir_ per local rule, which is also evaluated as a full path. _Indir_ is a chained variable, meaning it gets its value from either the global, if it is the first rule, or the _outdir_ of the previous rule. Any variable has a default can be overridden by simply setting it.
 
 ```
 ---
@@ -61,7 +61,7 @@ rules:
         outdir: {$self->outdir}
 ```
 
-For the sake of readability '/home/user/myanalysis' was ommited from the Rendered Variable for all but the first variable.
+For the sake of readability '/home/user/myanalysis' was omitted from the Rendered Variable for all but the first variable.
 
 Running biox would give us
 
@@ -135,8 +135,6 @@ For the sake of readability  '/home/user/myanalysis' was ommited from the Render
 | {$self-&gt;INPUT-&gt;\[0\]} | data/processed/Sample\_01/trimmomatic/Sample\_01\_1PE.fastq.gz |
 | {$self-&gt;INPUT-&gt;\[1\]} | data/processed/Sample\_01/trimmomatic/Sample\_01\_2PE.fastq.gz |
 | {$self-&gt;OUTPUT} | data/processed/Sample\_01/bowtie2/Sample\_01\_align.sam |
-
-
 
 
 

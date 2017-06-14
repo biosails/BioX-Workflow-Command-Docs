@@ -2,7 +2,7 @@
 
 BioX is written in perl, using the wonderful [MooseX-App](https://metacpan.org/release/MooseX-App). It is built with a pluggable architecture and can be easily extended with custom plugins and libraries.
 
-BioX can be installed through cpanm or conda. The recommended method of installing absolutely everything is conda.
+BioX can be installed through cpanm or conda. The recommended method of installing absolutely everything is conda, and especially bioconda.
 
 ```
 #Perl only solution

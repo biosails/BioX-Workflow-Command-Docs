@@ -13,10 +13,10 @@
 * [Quick Start - Create a New Workflow](quick-start-create-a-new-workflow.md)
 * [Advanced - Using the stash](advanced-using-the-stash.md)
 * [Advanced - Custom Rules](advanced-custom-rules.md)
+* [Advanced - Complex Variables](https://www.gitbook.com/book/biosails/biox-workflow-command-docs/edit#)
+
 * [Technical Details](technical-details.md)
 * [Developer Docs - Creating Plugins](developer-docs-creating-plots.md)
-
-* [Advanced - Complex Variables](advanced-complex-variables.md)
 
 
 

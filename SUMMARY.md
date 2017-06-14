@@ -15,6 +15,8 @@
 * [Advanced - Custom Rules](advanced-custom-rules.md)
 * [Technical Details](technical-details.md)
 * [Developer Docs - Creating Plugins](developer-docs-creating-plots.md)
-* [Special Variables - HPC](special-variables-hpc.md)
+
 * [Advanced - Complex Variables](advanced-complex-variables.md)
+
+
 

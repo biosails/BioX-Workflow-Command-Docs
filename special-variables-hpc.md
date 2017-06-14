@@ -1,8 +1,9 @@
 # Special Variables - HPC
 
-If you take a look at any of they NYUAD Production Pipelines, you will see that there are HPC variables. These are for use with [HPC-Runner-Command](https://jerowe.gitbooks.io/hpc-runner-command-docs/content/ "HPC-Runner-Command"). BioX-Workflow is designed to create a bash script that can run on any server anywhere, but if you are running a very large workflow on an HPC Environment, or even want to multithread among jobs, you can use the HPC parameters to make things run more smoothly.---
+If you take a look at any of they NYUAD Production Pipelines, you will see that there are HPC variables. These are for use with [HPC-Runner-Command](https://jerowe.gitbooks.io/hpc-runner-command-docs/content/ "HPC-Runner-Command"). BioX-Workflow is designed to create a bash script that can run on any server anywhere, but if you are running a very large workflow on an HPC Environment, or even want to multithread among jobs, you can use the HPC parameters to make things run more smoothly.-
 
 ```
+---
 global:
 ...
  - HPC:

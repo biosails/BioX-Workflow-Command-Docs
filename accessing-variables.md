@@ -45,7 +45,5 @@ Variables are always accessed as {$self-&gt;VARNAME}, except for sample, which i
 
 Templating is done using perl, and all variables are accessed as perl variables.
 
-
-
-
+For more information on accessing variables please see [Advanced - Complex Variables.](/advanced-complex-variables.md)
 

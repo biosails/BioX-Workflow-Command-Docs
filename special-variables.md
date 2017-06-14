@@ -1,4 +1,4 @@
-# Special Variables
+# Special Variables - Files and Directories
 
 BioX-Workflow-Command uses a series of special variables. Most of these have to do with files, but it is also possible to create dynamic lists, and to define HPC variables for use with HPC-Runner-Command.
 

@@ -37,5 +37,5 @@ In the script produced by `biox run`, you would see
 
 Notice that the jobname is automatically the created from the rule name, but can be overridden.
 
-Using these simple directives HPC-Runner-Command can integrate with a number of schedulers. It uses the 'jobname' and 'deps' in order to create a dependency tree, and the '\#TASK' tags to create task specific dependencies.
+Using these simple directives HPC-Runner-Command can integrate with a number of schedulers. It uses the 'jobname' and 'deps' in order to create a dependency tree, and the '\#TASK' tags to create task specific dependencies. It tracks tags, execution time, exit codes, and has a number of integrations for logging interface to interact various utilities.  [Sqlite,](https://metacpan.org/pod/HPC::Runner::Command::Plugin::Logger::Sqlite) and ElasticSearch are used internally, with more APIs on the way for other database engines and project management platforms. 
 

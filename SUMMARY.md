@@ -17,7 +17,10 @@
 * [Technical Details](technical-details.md)
 * [Developer Docs - Creating Plugins](developer-docs-creating-plots.md)
 * [FAQ - Where can I get software?](faq-where-can-i-get-software.md)
+* [FAQ - How do I run the workflows?](https://www.gitbook.com/book/biosails/biox-workflow-command-docs/edit#)
+
 * [Contact Us](contact-us.md)
 * [Acknowledgements](acknowledgements.md)
-* [FAQ - How do I run the workflows?](faq-how-do-i-run-the-workflows.md)
+
+
 

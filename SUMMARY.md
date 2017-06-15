@@ -18,6 +18,7 @@
 * [Developer Docs - Creating Plugins](developer-docs-creating-plots.md)
 * [FAQ - Where can I get software?](faq-where-can-i-get-software.md)
 * [Contact Us](/contact-us.md)
+* [Acknowledgements](/acknowledgements.md)
 
 
 

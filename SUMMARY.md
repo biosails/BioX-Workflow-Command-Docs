@@ -19,6 +19,5 @@
 * [FAQ - Where can I get software?](faq-where-can-i-get-software.md)
 * [Contact Us](contact-us.md)
 * [Acknowledgements](acknowledgements.md)
-
-
+* [FAQ - How do I run the workflows?](faq-how-do-i-run-the-workflows.md)
 
